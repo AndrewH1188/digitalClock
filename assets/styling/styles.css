@@ -1,1 +1,60 @@
-/*# sourceMappingURL=styles.css.map */
+body {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.digital-clock {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  border-radius: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  padding: 0 2rem;
+  border: 0.5rem solid #2d2d2d;
+}
+
+.week {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  color: #2d2d2d;
+  font-family: "Hack";
+  font-weight: 700;
+}
+.week .active {
+  color: #fff;
+}
+
+.min {
+  display: math;
+}
+
+.time {
+  font-family: "LED";
+}
+
+.hour,
+.min,
+.dots {
+  display: inline-block;
+  font-size: 6rem;
+  margin-top: 30px;
+}
+@media screen and (min-width: 450px) {
+  .hour,
+  .min,
+  .dots {
+    font-size: 13.2rem;
+    margin-top: 0;
+  }
+}
+
+.invisible {
+  visibility: hidden;
+}/*# sourceMappingURL=styles.css.map */
